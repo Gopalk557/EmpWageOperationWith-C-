@@ -8,22 +8,25 @@ namespace EmpWageOperation
 {
     internal class EmpWagePrograms
     {
-        public const int IS_FULL_TIME = 1;
-        public static void EmployeeAttendance()
+        public static void DailyWage()
         {
-
+            int IS_FULL_TIME = 1;
+            int EMP_RATE_PER_HOUR = 20;
+            int empHrs = 0;
+            int empWage = 0;
             Random random = new Random();
-            int EmpCheck = random.Next(0, 2);
-
-            if (EmpCheck == IS_FULL_TIME)
+            int empCheck = random.Next(0, 2);
+            if (empCheck == IS_FULL_TIME)
             {
-                Console.WriteLine("Employee is present");
+                empHrs = 8;
             }
             else
             {
-                Console.WriteLine("Employee is absent");
+                empHrs = 0;
             }
-            Console.ReadLine();
+            empWage = empHrs * EMP_RATE_PER_HOUR;
+            Console.WriteLine("emp wage :" + empWage);
         }
     }
 }
+

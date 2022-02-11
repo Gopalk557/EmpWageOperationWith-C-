@@ -10,7 +10,7 @@ namespace EmpWageOperation
     {
         static void Main(string[] args)
         {
-            EmpWagePrograms.EmployeeAttendance();
+            EmpWagePrograms.DailyWage();
             Console.ReadKey();
         }
     }
