@@ -10,7 +10,7 @@ namespace EmpWageOperation
     {
         static void Main(string[] args)
         {
-            EmpWagePrograms.EmpWageUsingSwitch();
+            EmpWagePrograms.CalculateWagesFor20DaysInMonth();
             Console.ReadKey();
         }
     }
